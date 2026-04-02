@@ -93,7 +93,7 @@ export default function Home() {
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               I co-authored an ACM CHI 2026 main conference paper based on an
-              extension of my master's thesis prototype —{" "}
+              extension of my master&apos;s thesis prototype —{" "}
               <Link
                 href="/projects"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -101,8 +101,8 @@ export default function Home() {
                 NeurodaptiXR
               </Link>{" "}
               — using physiological responses (eye-tracker + EEG) designed to
-              mitigate the Midas touch problem in Mixed Reality with "neural
-              clicking" using slow anticipatory cortical potentials (SPNs).
+              mitigate the Midas touch problem in Mixed Reality with &quot;neural
+              clicking&quot; using slow anticipatory cortical potentials (SPNs).
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
