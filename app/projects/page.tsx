@@ -93,53 +93,55 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <article key={index} className="border-b border-gray-200 dark:border-gray-800 pb-8 last:border-0">
+            <article key={index} className="flex flex-col bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded-3xl p-6">
               {project.image && (
-                <div className="mb-6 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center" style={{ maxHeight: "600px" }}>
+                <div className="mb-6 rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center shrink-0" style={{ maxHeight: "250px" }}>
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-full object-contain max-h-[250px]"
                   />
                 </div>
               )}
               
-              <div className="flex items-start justify-between gap-4 mb-3">
-                <div>
-                  <h2 className="text-2xl font-bold text-black dark:text-white">
+              <div className="flex flex-col flex-1">
+                <div className="mb-3">
+                  <h2 className="text-xl font-bold text-black dark:text-white leading-snug cursor-default">
                     {project.title}
                   </h2>
                   <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">{project.date}</p>
                 </div>
+
+                <p className="text-gray-700 dark:text-gray-300 text-sm mb-6 leading-relaxed flex-1">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="px-3 py-1 text-[11px] font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {project.github && (
+                  <div className="mt-auto">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline text-sm font-medium transition"
+                    >
+                      GitHub →
+                    </a>
+                  </div>
+                )}
               </div>
-
-              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                {project.description}
-              </p>
-
-              <div className="flex flex-wrap gap-2 mb-3">
-                {project.tags.map((tag, tagIndex) => (
-                  <span
-                    key={tagIndex}
-                    className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
-                >
-                  GitHub →
-                </a>
-              )}
             </article>
           ))}
         </div>
