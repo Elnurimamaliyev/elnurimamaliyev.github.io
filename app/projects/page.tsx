@@ -85,7 +85,7 @@ export default function Projects() {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-6 py-16">
+      <main className="max-w-5xl mx-auto px-6 py-16">
         <div className="mb-12">
           <h1 className="text-3xl font-bold text-black dark:text-white mb-4">Projects</h1>
           <p className="text-gray-600 dark:text-gray-400">
@@ -93,7 +93,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <article key={index} className="flex flex-col bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded-3xl p-6">
               {project.image && (
