@@ -141,12 +141,20 @@ export default function Home() {
 
         {/* Contact & Social Links */}
         <section className="border-t border-gray-200 dark:border-gray-800 pt-8">
-          <div className="flex gap-6 text-sm">
+          <div className="flex flex-wrap gap-6 text-sm">
             <a
               href="mailto:imamaliyevelnur@gmail.com"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               Email
+            </a>
+            <a
+              href="https://calendly.com/imamaliyevelnur/public-availability-calendar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+            >
+              Calendar
             </a>
             <a
               href="https://linkedin.com/in/elnurimamaliyev"
