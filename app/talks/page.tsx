@@ -48,8 +48,11 @@ export default function Talks() {
               <Link href="/projects" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Projects
               </Link>
-              <Link href="/talks" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+              <Link href="/talks" className="hover:text-gray-600 dark:hover:text-gray-400 transition font-medium">
                 Talks
+              </Link>
+              <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                Contact
               </Link>
             </div>
           </div>

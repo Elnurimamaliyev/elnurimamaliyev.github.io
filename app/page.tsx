@@ -33,6 +33,12 @@ export default function Home() {
               >
                 Talks
               </Link>
+              <Link
+                href="/contact"
+                className="hover:text-gray-600 dark:hover:text-gray-400 transition"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </div>
@@ -64,12 +70,18 @@ export default function Home() {
                 Postgrad. HCI and NeuroAI Researcher
               </p>
 
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base mb-6">
                 I am a postgraduate researcher currently looking for a PhD to
                 continue my research. My prior research covers HCI, XR, and ML
                 fields, with a focus on human augmentation and intelligent
-                systems. Feel free to DM me.
+                systems.
               </p>
+              <Link
+                href="/contact"
+                className="inline-block bg-black dark:bg-white text-white dark:text-black font-semibold text-sm py-2.5 px-6 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </section>

@@ -73,11 +73,14 @@ export default function Projects() {
               <Link href="/cv" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 CV
               </Link>
-              <Link href="/projects" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+              <Link href="/projects" className="hover:text-gray-600 dark:hover:text-gray-400 transition font-medium">
                 Projects
               </Link>
               <Link href="/talks" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Talks
+              </Link>
+              <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                Contact
               </Link>
             </div>
           </div>
