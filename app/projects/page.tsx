@@ -13,7 +13,7 @@ export default function Projects() {
       description: "How does language work without standard sound or text? This project uses self-supervised vision world models (JEPA) on motion capture/EMG from Austrian Sign Language (ÖGS) and LLM analysis of neurodivergent speech to build modality-agnostic, embodied computational models of human communication.",
       tags: ["Multimodal AI", "Vision World Models", "JEPA", "Sign Language", "ÖGS", "Motion Capture", "EMG", "LLMs", "NLP", "Computational Linguistics"],
       category: "Academic",
-      status: "Ongoing",
+      status: "Upcoming",
       date: "Apr. 2026 – Present",
       link: "/projects/sign-language-ai",
       image: "/images/mo_cap.png"
