@@ -28,6 +28,17 @@ export default function Projects() {
       github: "https://github.com/Elnurimamaliyev/NeurodaptiXR",
       image: "/images/neuroadaptixr.png"
     },
+      {
+      title: "GenAI Image Enhancement with Physiological RAG feedback",
+      description: "Developed GAN-generated images for human-in-the-loop experiment, integrated physiological data (ERP and Gaze) with perceptual and attentional metrics, precise stimulus timing, and ERP-compatible event logging.",
+      tags: ["GenAI", "GAN", "PsychoPy", "EEG", "Gaze", "Human-in-the-loop"],
+      category: "Academic",
+      status: "Ongoing",
+      date: "Jan. 2025 – May. 2025",
+      github: "https://github.com/Elnurimamaliyev/GenAI-Image-Enhancement",
+      image: "/images/genai_hitl.png"
+    },
+
     {
       title: "NeuroScreen - Health Monitoring and BCI Control for Paralyzed Patients",
       description: "Designed multimodal BCI for paralyzed patients to control IoT devices, robotic hand prototype via integrating real-time signals, EEG and eye-tracking, with AI-enhanced health monitoring. Won first place at TEKNOFEST 2025.",
@@ -57,16 +68,6 @@ export default function Projects() {
       date: "Aug. 2024 – Dec. 2025",
       github: "https://github.com/Elnurimamaliyev/NoApplAI",
       image: "/images/noapplai.png"
-    },
-    {
-      title: "GenAI Image Enhancement with Physiological RAG feedback",
-      description: "Developed GAN-generated images for human-in-the-loop experiment, integrated physiological data (ERP and Gaze) with perceptual and attentional metrics, precise stimulus timing, and ERP-compatible event logging.",
-      tags: ["GenAI", "GAN", "PsychoPy", "EEG", "Gaze", "Human-in-the-loop"],
-      category: "Academic",
-      status: "Ongoing",
-      date: "Jan. 2025 – May. 2025",
-      github: "https://github.com/Elnurimamaliyev/GenAI-Image-Enhancement",
-      image: "/images/genai_hitl.png"
     },
     {
       title: "AMBI4NS - Multivariate Amplitude-Binned TRF",
