@@ -5,9 +5,19 @@ import { useState } from "react";
 export default function Projects() {
   const [filter, setFilter] = useState("All");
 
-  const filterOptions = ["All", "Academic", "Startup", "Industry", "Ongoing", "Completed"];
+  const filterOptions = ["All", "Academic", "Startup", "Industry", "Ongoing", "Completed", "Upcoming"];
 
   const projects = [
+    {
+      title: "Multimodal AI & World Models for Sign Language: What Does Language Look Like Without Sound, Text, or Full Attention?",
+      description: "How does language work without standard sound or text? This project uses self-supervised vision world models (JEPA) on motion capture/EMG from Austrian Sign Language (ÖGS) and LLM analysis of neurodivergent speech to build modality-agnostic, embodied computational models of human communication.",
+      tags: ["Multimodal AI", "Vision World Models", "JEPA", "Sign Language", "ÖGS", "Motion Capture", "EMG", "LLMs", "NLP", "Computational Linguistics"],
+      category: "Academic",
+      status: "Ongoing",
+      date: "Apr. 2026 – Present",
+      link: "/projects/sign-language-ai",
+      image: "/images/mo_cap.png"
+    },
     {
       title: "NeurodaptiXR - MSc Thesis (CHI'26)",
       description: "Designed and conducted user studies in Unity-3D; developed DL-based classifiers for neural intention detection to improve gaze-based interactions. Accepted to the ACM CHI 2026 main conference.",
@@ -84,6 +94,7 @@ export default function Projects() {
     if (filter === "All") return true;
     if (filter === "Ongoing") return project.status === "Ongoing";
     if (filter === "Completed") return project.status === "Completed";
+    if (filter === "Upcoming") return project.status === "Upcoming";
     return project.category === filter;
   });
 
@@ -185,6 +196,17 @@ export default function Projects() {
                     >
                       GitHub →
                     </a>
+                  </div>
+                )}
+
+                {project.link && (
+                  <div className="mt-auto pt-4">
+                    <Link
+                      href={project.link}
+                      className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline text-sm font-medium transition"
+                    >
+                      Read More →
+                    </Link>
                   </div>
                 )}
               </div>
