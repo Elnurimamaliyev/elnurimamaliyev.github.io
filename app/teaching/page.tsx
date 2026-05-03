@@ -15,7 +15,8 @@ export default function Teaching() {
       category: "Workshop",
       level: "Beginner",
       date: "4-8 May, 2026 ",
-      institution: "Khazar University"
+      institution: "Khazar University",
+      image: "/images/teaching/pyweek-poster.jpg"
     },
     {
       title: "Multimodal AI in HCI: Hands-On Workshop",
@@ -25,6 +26,26 @@ export default function Teaching() {
       level: "Intermediate",
       date: "September, 2025",
       institution: "Baku State University"
+    },
+    {
+      title: "Startup Teacher/Mentor",
+      description: "Developing full-stack products and teaching product ideation, biomimicry, and product design. Training in UI/UX design principles. Mentoring teams to create MVPs and guide them through the product development lifecycle.",
+      tags: ["Full-Stack Development", "Product Design", "UI/UX", "Biomimicry", "Mentoring", "MVP Development"],
+      category: "Workshop",
+      level: "Professional",
+      date: "Mar 2022 - Mar 2024",
+      institution: "New Space Innovation · Baku, Azerbaijan",
+      image: "/images/teaching/new-space-innovation.jpg"
+    },
+    {
+      title: "Sapiens Tech - Mentor",
+      description: "Mentoring and teaching at Sapiens Tech.",
+      tags: ["Mentoring", "Technology"],
+      category: "Workshop",
+      level: "Professional",
+      date: "2020 - 2023",
+      institution: "Sapiens Tech · Baku, Azerbaijan",
+      image: "/images/teaching/Sapiens_tech.jpg"
     }
   ];
 
@@ -94,6 +115,15 @@ export default function Teaching() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredItems.map((item, index) => (
             <article key={index} className="flex flex-col bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded-3xl p-6">
+              {item.image && (
+                <div className="mb-4 rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center shrink-0" style={{ maxHeight: "180px" }}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover max-h-[180px]"
+                  />
+                </div>
+              )}
               <div className="flex flex-col flex-1">
                 <div className="mb-3">
                   <h2 className="text-xl font-bold text-black dark:text-white leading-snug cursor-default">

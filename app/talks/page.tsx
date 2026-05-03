@@ -38,14 +38,70 @@ export default function Talks() {
       title: "German Pre-CHI 2026 - Lab Tour",
       event: "German Pre-CHI 2026",
       type: "Lab Demo",
-      status: "Upcoming",
+      status: "Past",
       date: "2026",
       link: "https://www.hcilab.org/event/german-pre-chi-2026/",
       linkText: "Event Website",
       description: "Lab tour for the German Pre-CHI 2026 conference.",
       image: "/images/talks/pre_chi_talk.png"
+    },
+    {
+      title: "Asan Academy - Closing Speech",
+      event: "Asan Academy",
+      type: "Talk",
+      status: "Past",
+      date: "2022",
+      description: "Closing speech at Asan Academy.",
+      image: "/images/talks/asan-academy.jpg"
     }
-];
+  ];
+
+  const experiences = [
+    {
+      title: "Chairman of Student Scientific Society",
+      description: "Built a new team, wrote projects and provided trainings for founding a sustainable student self-development community focused on science and technology.",
+      date: "Nov 2022 - Mar 2023",
+      institution: "Baku State University · Baku, Azerbaijan",
+      tags: ["Leadership", "Community Building", "Science", "Project Management"],
+      type: "Lab Visit"
+    },
+    {
+      title: "Summer Internship - Visiting Student",
+      description: "Visiting student internship program focused on science and technology research at the university's research facilities.",
+      date: "Aug 2022 - Oct 2022",
+      institution: "Boğaziçi University · Istanbul, Turkey",
+      tags: ["Research", "Visiting Student", "Science"],
+      type: "Lab Visit",
+      image: "/images/talks/bogazici-internship.jpg"
+    },
+    {
+      title: "Summer Internship - Visiting Student",
+      description: "Volunteer internship at the Faculty of Medicine, Department of Pharmacology. Conducted research and laboratory work during summer months.",
+      date: "Jul 2022 - Aug 2022",
+      institution: "Uludağ Üniversitesi · Bursa, Turkey",
+      tags: ["Pharmacology", "Medicine", "Research", "Volunteering"],
+      type: "Lab Visit",
+      image: "/images/talks/uludag-internship.jpg"
+    },
+    {
+      title: "Medical Laboratory Assistant",
+      description: "Assisted in medical laboratory operations and genetic analysis work at a leading genetics research center.",
+      date: "Jun 2021 - Nov 2021",
+      institution: "Fetal Mərkəz NS Genetics · Baku, Azerbaijan",
+      tags: ["Medical Laboratory", "Genetics", "Analysis"],
+      type: "Lab Visit",
+      image: "/images/talks/fetal-genetics.jpg"
+    },
+    {
+      title: "Tech Co-Founder",
+      description: "Co-founded a non-profit organization focused on science endorsement in Azerbaijan. Organized sessions, workshops and built a sustainable volunteer community.",
+      date: "Apr 2020 - Aug 2022",
+      institution: "Azərbaycan Elm və İnnovasiya Könüllüləri · Baku, Azerbaijan",
+      tags: ["Entrepreneurship", "Science", "Community", "Non-profit", "Co-founder"],
+      type: "Research",
+      image: "/images/talks/science-volunteers-team.jpg"
+    }
+  ];
 
   const filteredTalks = talks.filter((talk) => {
     if (filter === "All") return true;
@@ -173,6 +229,60 @@ export default function Talks() {
             </article>
           ))}
         </div>
+
+        {/* Lab Visits & Research Experiences */}
+        {experiences.length > 0 && (
+          <section className="mt-20 pt-12 border-t border-gray-200 dark:border-gray-800">
+            <h2 className="text-2xl font-bold text-black dark:text-white mb-8">Lab Visits & Research Experiences</h2>
+            
+            <div className="space-y-6">
+              {experiences.map((exp, index) => (
+                <div key={index} className="bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded-2xl p-8 flex gap-8">
+                  {exp.image && (
+                    <div className="shrink-0 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center w-48 h-48">
+                      <img
+                        src={exp.image}
+                        alt={exp.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="flex-1">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold text-black dark:text-white mb-1">
+                          {exp.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{exp.date}</p>
+                        <p className="text-sm text-gray-700 dark:text-gray-300 font-medium">
+                          {exp.institution}
+                        </p>
+                      </div>
+                      <span className="px-3 py-1 text-xs font-medium rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 whitespace-nowrap ml-4">
+                        {exp.type}
+                      </span>
+                    </div>
+
+                    <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+                      {exp.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      {exp.tags.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className="px-3 py-1 text-[11px] font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
       </main>
     </div>
   );
