@@ -55,6 +55,9 @@ export default function Teaching() {
               <Link href="/teaching" className="hover:text-gray-600 dark:hover:text-gray-400 transition font-medium">
                 Teaching
               </Link>
+              <Link href="/pyweek/az" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                PyWeek
+              </Link>
               <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Contact
               </Link>
