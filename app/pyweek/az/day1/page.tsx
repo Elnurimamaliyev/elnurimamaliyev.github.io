@@ -125,6 +125,23 @@ export default function Day1Az() {
               </div>
             </section>
 
+            {/* Homework */}
+            <section className="bg-gradient-to-r from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20 border border-red-200 dark:border-red-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">📝 Ev Tapşırığı</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                Gün 1 materialını birləşdirmək üçün ev tapşırığını tamamlayın:
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="/Homework/homework/PyWeek_Homework.ipynb"
+                  download
+                  className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition"
+                >
+                  ⬇️ Ev Tapşırığını Yüklə
+                </a>
+              </div>
+            </section>
+
             {/* Topics */}
             <section className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border border-purple-200 dark:border-purple-800 rounded-3xl p-8 md:p-12">
               <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Əhatə Edilən Mövzular</h2>
