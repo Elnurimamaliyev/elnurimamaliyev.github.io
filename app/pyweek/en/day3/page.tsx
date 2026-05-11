@@ -40,7 +40,7 @@ export default function Day3En() {
               Evaluation & Development Roadmap
             </p>
             <p className="text-xl text-gray-500 dark:text-gray-400">
-              May 8, 2026 · 2–3 hours
+              May 13, 2026 · 2–3 hours
             </p>
           </div>
 

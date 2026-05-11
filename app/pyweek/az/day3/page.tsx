@@ -40,7 +40,7 @@ export default function Day3Az() {
               Qiymətləndirmə və İnkişaf Yolları
             </p>
             <p className="text-xl text-gray-500 dark:text-gray-400">
-              8 May 2026 · 2–3 saat
+              13 May 2026 · 2–3 saat
             </p>
           </div>
 

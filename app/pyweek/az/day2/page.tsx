@@ -40,7 +40,7 @@ export default function Day2Az() {
               Tapşırıqların Analizi və AI-dəstəkli Prototipləmə
             </p>
             <p className="text-xl text-gray-500 dark:text-gray-400">
-              6 May 2026 · 2–3 saat
+              8 May 2026 · 2–3 saat
             </p>
           </div>
 
@@ -52,6 +52,62 @@ export default function Day2Az() {
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 1-ci günün ev tapşırıqlarının həlli müzakirə olunacaq. ChatGPT, Claude və Copilot ilə sürətli prototipləmə öyrənin. Effektiv kodlaşdırma iş axını üçün prompt mühəndisliyi texnikası.
               </p>
+            </section>
+
+            {/* Recordings */}
+            <section className="bg-gradient-to-r from-pink-50 to-fuchsia-50 dark:from-pink-900/20 dark:to-fuchsia-900/20 border border-pink-200 dark:border-pink-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">🎥 Video Yazıları</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                Gün 2 video yazısına baxın:
+              </p>
+              <div className="flex flex-col gap-4">
+                <a
+                  href="https://drive.google.com/file/d/1d7OoHfpc2j7F5C7hZy-pVQ17vDromxb2/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition inline-flex items-center gap-2 w-fit"
+                >
+                  ▶️ Video Yazısını İzlə
+                </a>
+              </div>
+            </section>
+
+            {/* Topics */}
+            <section className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border border-purple-200 dark:border-purple-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Əhatə Edilən Mövzular</h2>
+              <div className="flex flex-wrap gap-3">
+                {["Kod Nəzərdən Keçirilməsi", "AI Alətləri", "Prompt Mühəndisliyi", "Prototipləmə", "ChatGPT", "Claude", "Copilot"].map((tag, idx) => (
+                  <span key={idx} className="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-medium rounded-full text-lg border border-purple-300 dark:border-purple-700">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </section>
+
+            {/* Slides */}
+            <section className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 border border-indigo-200 dark:border-indigo-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">🎬 Slaydlar</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                Gün 2 prezentasiasının slaydlarını aşağıda görüntülə və ya yükləyin:
+              </p>
+              <div className="mb-6 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-800 border-2 border-indigo-300 dark:border-indigo-700" style={{ height: "600px" }}>
+                <iframe
+                  src="/slides/PyWeek_AZ_Gun_2.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: "none" }}
+                  title="PyWeek Gün 2 Slaydları"
+                />
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="/slides/PyWeek_AZ_Gun_2.pdf"
+                  download
+                  className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition"
+                >
+                  ⬇️ Slaydları Yüklə (PDF)
+                </a>
+              </div>
             </section>
 
             {/* First Half */}
@@ -98,16 +154,12 @@ export default function Day2Az() {
               </ul>
             </section>
 
-            {/* Topics */}
-            <section className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border border-purple-200 dark:border-purple-800 rounded-3xl p-8 md:p-12">
-              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">Əhatə Edilən Mövzular</h2>
-              <div className="flex flex-wrap gap-3">
-                {["Kod Nəzərdən Keçirilməsi", "AI Alətləri", "Prompt Mühəndisliyi", "Prototipləmə", "ChatGPT", "Claude", "Copilot"].map((tag, idx) => (
-                  <span key={idx} className="px-4 py-2 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-medium rounded-full text-lg border border-purple-300 dark:border-purple-700">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            {/* Homework */}
+            <section className="bg-gradient-to-r from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20 border border-red-200 dark:border-red-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">📝 Ev Tapşırığı</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                Seminar zamanı öyrəndiklərinizi istifadə edərək və AI alətlərinin köməyi ilə öz xüsusi prototipinizi yaradın. Kodunuzu optimallaşdırın, effektiv promt-lər yazın və GitHub Copilot-dan istifadə edin.
+              </p>
             </section>
 
             {/* Navigation */}

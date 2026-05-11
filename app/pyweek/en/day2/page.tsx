@@ -40,7 +40,7 @@ export default function Day2En() {
               Assignment Analysis & AI-Powered Prototyping
             </p>
             <p className="text-xl text-gray-500 dark:text-gray-400">
-              May 6, 2026 · 2–3 hours
+              May 8, 2026 · 2–3 hours
             </p>
           </div>
 
@@ -107,6 +107,50 @@ export default function Day2En() {
                     {tag}
                   </span>
                 ))}
+              </div>
+            </section>
+
+            {/* Slides */}
+            <section className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 border border-indigo-200 dark:border-indigo-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">🎬 Slides</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                View or download the Day 2 presentation slides below:
+              </p>
+              <div className="mb-6 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-800 border-2 border-indigo-300 dark:border-indigo-700" style={{ height: "600px" }}>
+                <iframe
+                  src="/slides/PyWeek_AZ_Gun_2.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: "none" }}
+                  title="PyWeek Day 2 Slides"
+                />
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="/slides/PyWeek_AZ_Gun_2.pdf"
+                  download
+                  className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition"
+                >
+                  ⬇️ Download Slides (PDF)
+                </a>
+              </div>
+            </section>
+
+            {/* Recordings */}
+            <section className="bg-gradient-to-r from-pink-50 to-fuchsia-50 dark:from-pink-900/20 dark:to-fuchsia-900/20 border border-pink-200 dark:border-pink-800 rounded-3xl p-8 md:p-12">
+              <h2 className="text-3xl font-bold text-black dark:text-white mb-6">🎥 Recordings</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                Access the video recording from Day 2:
+              </p>
+              <div className="flex flex-col gap-4">
+                <a
+                  href="https://drive.google.com/file/d/1d7OoHfpc2j7F5C7hZy-pVQ17vDromxb2/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition inline-flex items-center gap-2 w-fit"
+                >
+                  ▶️ Watch Video Recording
+                </a>
               </div>
             </section>
 
