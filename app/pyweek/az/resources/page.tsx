@@ -49,6 +49,9 @@ export default function ResourcesAz() {
               Elnur Imamaliyev
             </Link>
             <div className="flex gap-6 text-sm">
+              <Link href="/pyweek/en/resources" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                🌐 English
+              </Link>
               <Link href="/pyweek/az" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 ← Geri
               </Link>

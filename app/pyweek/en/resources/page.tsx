@@ -49,6 +49,9 @@ export default function ResourcesEn() {
               Elnur Imamaliyev
             </Link>
             <div className="flex gap-6 text-sm">
+              <Link href="/pyweek/az/resources" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                🌐 Azərbaycanca
+              </Link>
               <Link href="/pyweek/en" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 ← Back
               </Link>
