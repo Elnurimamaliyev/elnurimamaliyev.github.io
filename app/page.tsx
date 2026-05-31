@@ -34,16 +34,16 @@ export default function Home() {
                 Talks
               </Link>
               <Link
+                href="/timeline"
+                className="hover:text-gray-600 dark:hover:text-gray-400 transition"
+              >
+                Timeline
+              </Link>
+              <Link
                 href="/teaching"
                 className="hover:text-gray-600 dark:hover:text-gray-400 transition"
               >
                 Teaching
-              </Link>
-              <Link
-                href="/pyweek/en"
-                className="hover:text-gray-600 dark:hover:text-gray-400 transition"
-              >
-                PyWeek
               </Link>
               <Link
                 href="/contact"

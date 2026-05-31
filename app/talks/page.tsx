@@ -127,11 +127,11 @@ export default function Talks() {
               <Link href="/talks" className="hover:text-gray-600 dark:hover:text-gray-400 transition font-medium">
                 Talks
               </Link>
+              <Link href="/timeline" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                Timeline
+              </Link>
               <Link href="/teaching" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Teaching
-              </Link>
-              <Link href="/pyweek/en" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
-                PyWeek
               </Link>
               <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Contact
@@ -235,51 +235,69 @@ export default function Talks() {
           <section className="mt-20 pt-12 border-t border-gray-200 dark:border-gray-800">
             <h2 className="text-2xl font-bold text-black dark:text-white mb-8">Lab Visits & Research Experiences</h2>
             
-            <div className="space-y-6">
+            <div className="relative">
+              <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-gray-300 via-gray-400 to-gray-300 dark:from-gray-700 dark:via-gray-600 dark:to-gray-700 md:left-1/2 md:-translate-x-1/2" />
+
+              <div className="space-y-10">
               {experiences.map((exp, index) => (
-                <div key={index} className="bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 rounded-2xl p-8 flex gap-8">
-                  {exp.image && (
-                    <div className="shrink-0 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center w-48 h-48">
-                      <img
-                        src={exp.image}
-                        alt={exp.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-bold text-black dark:text-white mb-1">
-                          {exp.title}
-                        </h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{exp.date}</p>
-                        <p className="text-sm text-gray-700 dark:text-gray-300 font-medium">
-                          {exp.institution}
+                <div
+                  key={index}
+                  className={`relative flex pl-12 md:pl-0 ${
+                    index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                  }`}
+                >
+                  <div className="absolute left-4 top-8 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-white dark:border-black bg-black dark:bg-white shadow-md md:left-1/2" />
+
+                  <div className={`w-full md:w-[calc(50%-2rem)] ${index % 2 === 0 ? "md:pr-10" : "md:pl-10"}`}>
+                    <article className="overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/50 shadow-sm transition hover:shadow-md">
+                      {exp.image && (
+                        <div className="aspect-[16/9] overflow-hidden bg-gray-200 dark:bg-gray-800">
+                          <img
+                            src={exp.image}
+                            alt={exp.title}
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                      )}
+
+                      <div className="p-6 md:p-7">
+                        <div className="mb-4 flex items-start justify-between gap-4">
+                          <div className="min-w-0">
+                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400 mb-2">
+                              {exp.date}
+                            </p>
+                            <h3 className="text-xl font-bold text-black dark:text-white mb-1 leading-snug">
+                              {exp.title}
+                            </h3>
+                            <p className="text-sm text-gray-700 dark:text-gray-300 font-medium">
+                              {exp.institution}
+                            </p>
+                          </div>
+                          <span className="px-3 py-1 text-xs font-medium rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 whitespace-nowrap">
+                            {exp.type}
+                          </span>
+                        </div>
+
+                        <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+                          {exp.description}
                         </p>
+
+                        <div className="flex flex-wrap gap-2">
+                          {exp.tags.map((tag, tagIndex) => (
+                            <span
+                              key={tagIndex}
+                              className="px-3 py-1 text-[11px] font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                      <span className="px-3 py-1 text-xs font-medium rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 whitespace-nowrap ml-4">
-                        {exp.type}
-                      </span>
-                    </div>
-
-                    <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 leading-relaxed">
-                      {exp.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2">
-                      {exp.tags.map((tag, tagIndex) => (
-                        <span
-                          key={tagIndex}
-                          className="px-3 py-1 text-[11px] font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                    </article>
                   </div>
                 </div>
               ))}
+              </div>
             </div>
           </section>
         )}

@@ -9,16 +9,6 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Multimodal AI for Sign Language",
-      description: "What Does Language Look Like Without Sound, Text, or Full Attention? This project uses self-supervised vision world models (JEPA) on motion capture/EMG from Austrian Sign Language (ÖGS) and LLM analysis of neurodivergent speech to build modality-agnostic, embodied computational models of human communication.",
-      tags: ["Multimodal AI", "World Models", "JEPA", "Sign Language", "ÖGS", "Motion Capture", "EMG", "LLMs", "NLP", "Computational Linguistics"],
-      category: "Academic",
-      status: "Upcoming",
-      date: "Upcoming",
-      link: "/projects/sign-language-ai",
-      image: "/images/mo_cap.png"
-    },
-    {
       title: "NeurodaptiXR - MSc Thesis (CHI'26)",
       description: "Designed and conducted user studies in Unity-3D; developed DL-based classifiers for neural intention detection to improve gaze-based interactions. Accepted to the ACM CHI 2026 main conference.",
       tags: ["C#", "Unity 3D", "Eye-Tracking", "Deep Learning", "XR"],
@@ -118,11 +108,11 @@ export default function Projects() {
               <Link href="/talks" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Talks
               </Link>
+              <Link href="/timeline" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
+                Timeline
+              </Link>
               <Link href="/teaching" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Teaching
-              </Link>
-              <Link href="/pyweek/en" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
-                PyWeek
               </Link>
               <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Contact
@@ -203,17 +193,6 @@ export default function Projects() {
                     >
                       GitHub →
                     </a>
-                  </div>
-                )}
-
-                {project.link && (
-                  <div className="mt-auto pt-4">
-                    <Link
-                      href={project.link}
-                      className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:underline text-sm font-medium transition"
-                    >
-                      Read More →
-                    </Link>
                   </div>
                 )}
               </div>
