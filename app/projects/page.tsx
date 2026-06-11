@@ -9,6 +9,16 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "SAM/SANT — EEG Traces of Spatial Attention",
+      description: "Using RIFT to measure spatial attention allocation via EEG hemisphere asymmetry. Clinical target: diagnosing and monitoring Unilateral Spatial Neglect in stroke patients.",
+      tags: ["Python", "PsychoPy", "EEG", "BrainAmp", "LSL", "RIFT"],
+      category: "Academic",
+      status: "Ongoing",
+      date: "May. 2026 – Present",
+      github: "",
+      image: "/images/sam_sant.png"
+    },
+    {
       title: "NeurodaptiXR - MSc Thesis (CHI'26)",
       description: "Designed and conducted user studies in Unity-3D; developed DL-based classifiers for neural intention detection to improve gaze-based interactions. Accepted to the ACM CHI 2026 main conference.",
       tags: ["C#", "Unity 3D", "Eye-Tracking", "Deep Learning", "XR"],
@@ -18,7 +28,7 @@ export default function Projects() {
       github: "https://github.com/Elnurimamaliyev/NeurodaptiXR",
       image: "/images/neuroadaptixr.png"
     },
-      {
+    {
       title: "GenAI Image Enhancement with Physiological RAG feedback",
       description: "Developed GAN-generated images for human-in-the-loop experiment, integrated physiological data (ERP and Gaze) with perceptual and attentional metrics, precise stimulus timing, and ERP-compatible event logging.",
       tags: ["GenAI", "GAN", "PsychoPy", "EEG", "Gaze", "Human-in-the-loop"],

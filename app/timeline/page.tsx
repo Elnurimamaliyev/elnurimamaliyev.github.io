@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 const timelineEntries = [
   {
     date: "May 2026 - Present",
-    title: "Postgraduate Researcher",
+    title: "Pre-Doctoral Fellow",
     institution: "Max Planck Institute for Human Cognitive and Brain Sciences · Berlin, Germany",
     description:
       "",

@@ -79,14 +79,15 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-4 font-medium">
-                Postgrad. HCI and NeuroAI Researcher
+                Pre-Doctoral Fellow · MPI for Human Cognitive and Brain Sciences
               </p>
 
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base mb-6">
-                I am a postgraduate researcher currently looking for a PhD to
-                continue my research. My prior research covers HCI, XR, and ML
-                fields, with a focus on human augmentation and intelligent
-                systems.
+                HCI and NeuroAI researcher with an MSc in Computational
+                Neuroscience, currently a Pre-Doctoral Fellow at the Max Planck
+                Institute for Human Cognitive and Brain Sciences. His research
+                spans HCI, XR, and ML, with a focus on human augmentation and
+                intelligent systems.
               </p>
               <Link
                 href="/contact"
@@ -106,32 +107,29 @@ export default function Home() {
 
           <div className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I am an HCI researcher with an MSc degree in Computational
-              Neuroscience and am highly skilled in programming with Python,
-              MATLAB, and C#, which gives me a unique research edge. I
-              previously focused intensely on BCI, XR systems, and now, I am
-              transitioning to the broader HCI, AI/ML fields to apply my
-              knowledge of cognitive systems and physiological sensing to human
-              augmentation.
+              Elnur is an HCI researcher with an MSc in Computational
+              Neuroscience, skilled in Python, MATLAB, and C#. His background
+              spans BCI and XR systems, with a current focus on applying
+              cognitive systems and physiological sensing to human augmentation
+              across HCI and AI/ML.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I co-authored an ACM CHI 2026 main conference paper based on an
-              extension of my master&apos;s thesis prototype —{" "}
+              He co-authored an ACM CHI 2026 main conference paper based on an
+              extension of his master&apos;s thesis prototype —{" "}
               <Link
                 href="/projects"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
                 NeurodaptiXR
               </Link>{" "}
-              — using physiological responses (eye-tracker + EEG) designed to
-              mitigate the Midas touch problem in Mixed Reality with &quot;neural
-              clicking&quot; using slow anticipatory cortical potentials (SPNs).
+              — using physiological responses (eye-tracker + EEG) to mitigate
+              the Midas Touch problem in Mixed Reality via &quot;neural
+              clicking&quot; based on slow anticipatory cortical potentials (SPNs).
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              If you are interested in my earlier cognitive modeling work,
-              please check out the{" "}
+              His earlier cognitive modeling work includes the{" "}
               <Link
                 href="/projects"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -149,7 +147,7 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              You can find all my projects on my{" "}
+              All projects and open-source code for replication are available on his{" "}
               <a
                 href="https://github.com/Elnurimamaliyev"
                 target="_blank"
@@ -157,8 +155,8 @@ export default function Home() {
                 className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
               >
                 GitHub
-              </a>{" "}
-              along with the open-source code for replication.
+              </a>
+              .
             </p>
           </div>
         </section>
