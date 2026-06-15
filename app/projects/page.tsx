@@ -9,7 +9,7 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "SAM/SANT — EEG Traces of Spatial Attention",
+      title: "SAM/SANT - EEG Traces of Spatial Attention",
       description: "Using RIFT to measure spatial attention allocation via EEG hemisphere asymmetry. Clinical target: diagnosing and monitoring Unilateral Spatial Neglect in stroke patients.",
       tags: ["Python", "PsychoPy", "EEG", "BrainAmp", "LSL", "RIFT"],
       category: "Academic",
@@ -17,6 +17,16 @@ export default function Projects() {
       date: "May. 2026 – Present",
       github: "",
       image: "/images/sam_sant.png"
+    },
+    {
+      title: "NALP - NeuroAdaptive Language Processing Engine",
+      description: "Designing adaptive signal architecture for Gabb's K-12 language learning platform in XR environments. Research focus: struggle detection, spatial memory, attention and cognitive load detection, neuroadaptive interaction.",
+      tags: ["Python", "EEG", "Eye-Tracking", "XR", "Cognitive Load", "HCI"],
+      category: "Industry",
+      status: "Ongoing",
+      date: "Apr. 2026 – Present",
+      github: "",
+      image: "/images/Gabb_SS.png"
     },
     {
       title: "NeurodaptiXR - MSc Thesis (CHI'26)",
