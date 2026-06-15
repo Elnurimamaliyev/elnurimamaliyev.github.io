@@ -9,6 +9,16 @@ export default function Talks() {
 
   const talks = [
     {
+      title: "Multimodal BCI and Signal Processing",
+      event: "AEIK AI & Science Forum 2026",
+      type: "Talk",
+      status: "Upcoming",
+      date: "June 23, 2026",
+      authors: "Imamaliyev, E.",
+      description: "Invited speaker at AEIK AI & Science Forum 2026, a two-day interdisciplinary forum at Khazar University. Presented multimodal BCI and signal processing research to an audience of scientists and industry experts across AI, neuroscience, and computational biology.",
+      image: "/images/teaching/aeik_ai_science_forum.jpeg"
+    },
+    {
       title: "Beyond Univariate Envelope Brain Modeling: Increasing EEG response accuracy with the multivariate Amplitude-Binned TRF model",
       event: "Munich Brain Day 2025",
       type: "Poster",
@@ -63,7 +73,7 @@ export default function Talks() {
       date: "Nov 2022 - Mar 2023",
       institution: "Baku State University · Baku, Azerbaijan",
       tags: ["Leadership", "Community Building", "Science", "Project Management"],
-      type: "Lab Visit"
+      type: "Leadership"
     },
     {
       title: "Summer Internship - Visiting Student",

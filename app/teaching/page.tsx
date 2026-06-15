@@ -9,6 +9,16 @@ export default function Teaching() {
 
   const teachingItems = [
     {
+      title: "BUTAM — Machine Learning Workshop",
+      description: "A 4-module intensive Machine Learning program covering fundamentals through Scikit-learn, classification for real-world problems (signal classification, disease analysis, species identification), model selection, and professional portfolio/CV presentation of results. Conducted online with recorded sessions shared with participants.",
+      tags: ["Machine Learning", "Python", "Scikit-learn", "Classification", "Data Analysis"],
+      category: "Workshop",
+      level: "Beginner",
+      date: "28–31 May 2026",
+      institution: "BUTAM",
+      image: "/images/teaching/butam_machine_learning.jpg"
+    },
+    {
       title: "PyWeek — Scientific Programming & Data Analysis",
       description: "A comprehensive 3-day workshop introducing scientific programming with Python, NumPy, Pandas, Matplotlib, and SciPy. Hands-on projects with AI-powered prototyping and domain-specific challenges.",
       tags: ["Python", "Data Analysis", "NumPy", "Pandas", "Matplotlib", "SciPy"],

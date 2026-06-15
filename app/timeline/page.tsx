@@ -246,30 +246,30 @@ export default function TimelinePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black">
-      <nav className="border-b border-gray-200">
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+      <nav className="border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-2xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between gap-6">
-            <Link href="/" className="text-lg font-semibold text-black">
+            <Link href="/" className="text-lg font-semibold text-black dark:text-white">
               Elnur Imamaliyev
             </Link>
             <div className="flex flex-wrap gap-6 text-sm justify-end">
-              <Link href="/cv" className="hover:text-gray-600 transition">
+              <Link href="/cv" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 CV
               </Link>
-              <Link href="/projects" className="hover:text-gray-600 transition">
+              <Link href="/projects" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Projects
               </Link>
-              <Link href="/talks" className="hover:text-gray-600 transition">
+              <Link href="/talks" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Talks
               </Link>
-              <Link href="/timeline" className="hover:text-gray-600 transition font-medium" aria-current="page">
+              <Link href="/timeline" className="hover:text-gray-600 dark:hover:text-gray-400 transition font-medium" aria-current="page">
                 Storyline
               </Link>
-              <Link href="/teaching" className="hover:text-gray-600 transition">
+              <Link href="/teaching" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Teaching
               </Link>
-              <Link href="/contact" className="hover:text-gray-600 transition">
+              <Link href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Contact
               </Link>
             </div>
@@ -279,19 +279,19 @@ export default function TimelinePage() {
 
       <main className="max-w-5xl mx-auto px-6 py-16">
         <section className="mb-16 max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-gray-500 mb-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-gray-500 dark:text-gray-400 mb-4">
             Storyline
           </p>
-          <h1 className="text-3xl md:text-4xl font-bold text-black mb-5 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-5 leading-tight">
             A vertical view of research, teaching, and mentoring milestones.
           </h1>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
             This timeline follows the work that shaped my portfolio, from mentoring and teaching through to research output and publication.
           </p>
         </section>
 
         <section className="relative scroll-smooth md:snap-y md:snap-mandatory md:scroll-py-[50vh] md:[scroll-padding-top:50vh] md:[scroll-padding-bottom:50vh]">
-          <div className="pointer-events-none absolute left-8 top-0 bottom-0 z-10 w-[3px] overflow-hidden bg-gray-300 md:left-1/2 md:-translate-x-1/2">
+          <div className="pointer-events-none absolute left-8 top-0 bottom-0 z-10 w-[3px] overflow-hidden bg-gray-300 dark:bg-gray-700 md:left-1/2 md:-translate-x-1/2">
             <div
               className="absolute inset-x-0 top-0 bg-gradient-to-b from-sky-500 via-blue-600 to-indigo-600 transition-[height,opacity] duration-200 ease-out"
               style={{
@@ -312,30 +312,30 @@ export default function TimelinePage() {
                 className="relative grid min-h-[72vh] items-center pl-16 md:pl-0 md:grid-cols-[1fr_auto_1fr] md:snap-center md:py-16 gap-4 md:gap-8"
               >
                 <div className="max-w-[18rem] justify-self-start pr-6 md:justify-self-end md:pr-8 md:text-right md:col-start-1">
-                  <p className={`text-xl md:text-2xl font-medium leading-tight transition-colors duration-150 ${activeIndex === index ? "text-sky-600" : "text-gray-300"}`}>
+                  <p className={`text-xl md:text-2xl font-medium leading-tight transition-colors duration-150 ${activeIndex === index ? "text-sky-600 dark:text-sky-400" : "text-gray-300 dark:text-gray-600"}`}>
                     {entry.date}
                   </p>
                 </div>
 
                 <div className="hidden md:flex md:flex-col md:items-center md:col-start-2">
-                  <div className="h-3 w-3 rounded-full bg-gray-600 border-2 border-white ring-1 ring-gray-400" />
+                  <div className="h-3 w-3 rounded-full bg-gray-600 dark:bg-gray-400 border-2 border-white dark:border-black ring-1 ring-gray-400 dark:ring-gray-600" />
                 </div>
 
                 <article className={`w-full max-w-[28rem] transition-all duration-150 ${activeIndex === index ? "opacity-100" : "opacity-60"} md:col-start-3 md:justify-self-start pl-8 md:pl-0`}>
                   <div className="space-y-5">
                     <div>
-                      <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
+                      <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white leading-tight">
                         {entry.title}
                       </h2>
-                      <p className="mt-1 text-sm font-medium text-gray-700">
+                      <p className="mt-1 text-sm font-medium text-gray-700 dark:text-gray-300">
                         {entry.institution}
                       </p>
                     </div>
 
                     {entry.image && (
-                      <div className={`overflow-hidden rounded-[1.25rem] bg-gray-100 ring-1 transition-all duration-150 ${activeIndex === index ? "ring-sky-200 shadow-[0_10px_30px_rgba(14,165,233,0.12)]" : "ring-transparent"}`}>
+                      <div className={`overflow-hidden rounded-[1.25rem] bg-gray-100 dark:bg-gray-800 ring-1 transition-all duration-150 ${activeIndex === index ? "ring-sky-200 dark:ring-sky-800 shadow-[0_10px_30px_rgba(14,165,233,0.12)]" : "ring-transparent"}`}>
                         <Image
-                          src={entry.image} 
+                          src={entry.image}
                           alt={entry.imageAlt || ""}
                           width={960}
                           height={720}
@@ -344,7 +344,7 @@ export default function TimelinePage() {
                       </div>
                     )}
 
-                    <p className="max-w-xl text-[15px] leading-7 text-gray-700">
+                    <p className="max-w-xl text-[15px] leading-7 text-gray-700 dark:text-gray-300">
                       {entry.description}
                     </p>
                   </div>
