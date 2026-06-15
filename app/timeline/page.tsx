@@ -192,7 +192,6 @@ const timelineEntries = [
     image: "/images/BDU_logo.png",
     imageAlt: "BSU start",
     href: "/talks",
-    href: "/talks",
   },
   {
     date: "2016",
