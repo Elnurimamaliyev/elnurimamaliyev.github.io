@@ -61,6 +61,8 @@ const timelineEntries = [
     institution: "University of Oldenburg · Oldenburg, Germany",
     description:
       "Graduate studies in Computational Neuroscience with focus on Machine Learning, XR, and Human-Computer Interaction. Grade: 1.6. Thesis: Neuroadaptive HCI – Neural Click Detection in Mixed Reality.",
+    image: "/images/uni_oldenburg2.jpg",
+    imageAlt: "University of Oldenburg",
     href: "/projects",
   },
   {
@@ -74,7 +76,7 @@ const timelineEntries = [
     href: "/projects",
   },
     {
-    date: "Jan-May 2024",
+    date: "Jan-May 2025",
     title: "GenAI Image Enhancement with Physiological Feedback",
     institution: "Human-AI Research",
     description:
@@ -109,6 +111,8 @@ const timelineEntries = [
     institution: "University of Oldenburg · Oldenburg, Germany",
     description:
       "",
+    image: "/images/uni_oldenburg.jpg",
+    imageAlt: "University of Oldenburg",
     href: "/projects",
   },
   {
@@ -127,6 +131,8 @@ const timelineEntries = [
     institution: "Baku State University · Baku, Azerbaijan",
     description:
       "",
+    image: "/images/BDU_logo.png",
+    imageAlt: "BSU start",
     href: "/talks",
   },
   {
@@ -183,6 +189,9 @@ const timelineEntries = [
     institution: "Baku State University · Baku, Azerbaijan",
     description:
       "",
+    image: "/images/BDU_logo.png",
+    imageAlt: "BSU start",
+    href: "/talks",
     href: "/talks",
   },
   {
