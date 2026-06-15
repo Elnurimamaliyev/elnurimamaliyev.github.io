@@ -264,7 +264,7 @@ export default function TimelinePage() {
                 Talks
               </Link>
               <Link href="/timeline" className="hover:text-gray-600 dark:hover:text-gray-400 transition font-medium" aria-current="page">
-                Storyline
+                Timeline
               </Link>
               <Link href="/teaching" className="hover:text-gray-600 dark:hover:text-gray-400 transition">
                 Teaching
@@ -280,7 +280,7 @@ export default function TimelinePage() {
       <main className="max-w-5xl mx-auto px-6 py-16">
         <section className="mb-16 max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-gray-500 dark:text-gray-400 mb-4">
-            Storyline
+            Timeline
           </p>
           <h1 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-5 leading-tight">
             A vertical view of research, teaching, and mentoring milestones.
